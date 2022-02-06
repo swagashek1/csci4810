@@ -5,7 +5,7 @@ public class DrawPoints extends JPanel {
 	public void paintComponent(Graphics g) {
 
 		int range = 500;
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 5000; i++) {
 
 			
 			  int x1 = (int) (Math.random() * range + 100),
