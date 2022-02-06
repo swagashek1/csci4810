@@ -4,19 +4,15 @@ import javax.swing.*;
 public class DrawPoints extends JPanel {
 	public void paintComponent(Graphics g) {
 
-		//int range = 500;
+		int range = 500;
 		for (int i = 0; i < 1; i++) {
 
-			/*
-			 * int x1 = (int) (Math.random() * range + 100),
-			 * y1 = (int) (Math.random() * range + 100),
-			 * x2 = (int) (Math.random() * range + 100),
-			 * y2 = (int) (Math.random() * range + 100);
-			 */
-			int x1 = 100,
-					y1 = 100,
-					x2 = 200,
-					y2 = 200;
+			
+			  int x1 = (int) (Math.random() * range + 100),
+			  y1 = (int) (Math.random() * range + 100),
+			  x2 = (int) (Math.random() * range + 100),
+			  y2 = (int) (Math.random() * range + 100);
+			 
 			int m = 1;
 			if (y2 == y1) {
 				if (x2 < x1) {
@@ -79,23 +75,7 @@ public class DrawPoints extends JPanel {
 						g.drawLine(x, y, x, y);
 					}
 				}
-				/*	
-				 * else {
-				 * int c = y1;
-				 * System.out.println("C:" + c + "m:" + m);
-				 * for (int x = x1; x <= x2; x++) {
-				 * // Assuming that the round function finds
-				 * // closest integer to a given float.
-				 * 
-				 * int y = Math.round(m * x + c);
-				 * if (x == x1 + 1) {
-				 * System.out.println("in");
-				 * }
-				 * g.drawLine(x, y, x, y);
-				 * }
-				 */
 			}
-			System.out.println("done");
 		}
 	}
 
