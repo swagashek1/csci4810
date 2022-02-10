@@ -72,7 +72,7 @@ public class DrawpointsBresenham extends JPanel {
         brez();
  
         DrawpointsBresenham panel = new DrawpointsBresenham();
-        System.out.println(listr.get(0).size()+"  next    ");
+      
  
         frame.add(panel);
  
