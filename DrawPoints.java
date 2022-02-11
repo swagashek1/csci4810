@@ -24,10 +24,13 @@ public class DrawPoints extends JPanel {
 
 			for (int i = 0; i < count; i++) {
 
-				int x1 = (int) (Math.random() * range + 100),
-						y1 = (int) (Math.random() * range + 100),
-						x2 = (int) (Math.random() * range + 100),
-						y2 = (int) (Math.random() * range + 100);
+				
+                int x1 = (int) (Math.random() * range + 100),
+                 y1 = (int) (Math.random() * range + 100),
+                 x2 = (int) (Math.random() * range + 100),
+                 y2 = (int) (Math.random() * range + 100);
+
+                
 
 				int m = 1;
 				if (y2 == y1) {
@@ -99,7 +102,10 @@ public class DrawPoints extends JPanel {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBackground(Color.white);
 		frame.setSize(800, 800);
-		basicAlg();
+		long time1= System.nanoTime();
+        basicAlg();
+		long time2= System.nanoTime();
+		System.out.println(time2-time1);
 
 		DrawPoints panel = new DrawPoints();
 
